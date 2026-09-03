@@ -1,5 +1,3 @@
-# 前言
-不折腾甲骨文了，公布自用抢购脚本，不保证会更新，基于OCI命令编写终端交互安全系数更高，有问题请自行解决。
 # 脚本优缺点
 - 交互式配置，支持ARM和AMD架构
 - 自动后台运行，日志保存到log目录
@@ -41,11 +39,11 @@ vi /home/api.conf
 把以下内容保存到api.conf 脚本需要，key_file 为开机后需要的公钥，钉钉通知 webhook和secret请自行获取（不知道请百度或谷歌找教程）
 ```
 [DEFAULT]
-user = ocid1.user.oc1..aa
-fingerprint = 4f:86:27:fa:e9:1f:90:bb:27
-tenancy = ocid1.tenancy.oc1..aaaaaaaapfc7on7ljnylc2x5bpfj
-region = ap-singapore-1
-key_file = /home/ssh-key-2025-07-20.key.pub
+user = ocid1.user.oc1..aa(你的用户OCID)
+fingerprint = 4f:86:27:fa:e9:1f:90:bb:27 (刚才记下的指纹)
+tenancy = ocid1.tenancy.oc1..aaaaaaaapfc7on7ljnylc2x5bpfj(你的租户OCID)
+region = ap-singapore-1 (你的区域)
+key_file = /home/ssh-key-2025-07-20.key.pub(VPS的公钥)
 
 # 钉钉通知
 [DINGTALK]
