@@ -971,8 +971,8 @@ class OCIInstanceManager(BaseManager):
             result = subprocess.run(cmd, capture_output=True, text=True, check=True)
             images = json.loads(result.stdout)["data"]
 
-            # 过滤 Ubuntu 22.04 Minimal 镜像
-            images = [img for img in images if "Canonical-Ubuntu-22.04-Minimal" in img.get("display-name", "")]
+            # 过滤 Ubuntu 26.04 Minimal 镜像
+            images = [img for img in images if "Canonical-Ubuntu-26.04-Minimal" in img.get("display-name", "")]
             
             # 根据架构过滤
             if arch == "arm":
