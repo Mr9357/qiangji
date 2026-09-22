@@ -56,11 +56,11 @@ oci iam availability-domain list
 ```
 # OCI 抢机脚本
 ```
-wget https://raw.githubusercontent.com/kuke31/oci/main/seckill.py
+wget https://raw.githubusercontent.com/Mr9357/qiangji/main/seckill.py
 ```
 可选
 ```
-wget https://raw.githubusercontent.com/kuke31/oci/main/sl.py
+wget https://raw.githubusercontent.com/Mr9357/qiangji/main/sl.py
 ```
 # 使用方法
 直接执行
