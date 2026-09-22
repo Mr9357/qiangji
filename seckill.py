@@ -1257,7 +1257,7 @@ def user_input() -> UserConfig:
     
     # 通用配置
     disk_size = get_valid_input("请输入硬盘大小（50-200）G: ", 50, 200, 50)
-    vpus = 120  # 硬盘性能固定为120 VPUs/GB
+    vpus = 10  # 硬盘性能固定为10 VPUs/GB
     interval = get_time_interval()
     
     return UserConfig(
