@@ -8,6 +8,11 @@
 
 - 单账户，无Web,功能不如Web全面
 - 仅支持公私验证登录服务器
+# 基础依赖安装
+```
+sudo apt update
+sudo apt install python3 python3-pip curl wget nano -y
+```
 # OCI安装
 一路回车 注意：要按 y <br>私钥为你API的私钥文件 （比如：1111@11111-2025-08-24T09_14_41.053Z.pem  不是public.pem）
 ```
@@ -29,12 +34,12 @@ chmod 600 /root/.oci/config
 chmod 600 /home/1111@11111-2025-08-24T09_14_41.053Z.pem
 ```
 # 脚本安装
-以yum系列linux演示，apt系列linux命令有点出入 安装依赖
+安装python依赖
 ```
-yum install python3-pip -y && pip3 install oci && pip install requests && pip install prettytable
+pip3 install --break-system-packages oci requests prettytable
 ```
 ```
-vi /home/api.conf
+nano /home/api.conf
 ```
 把以下内容保存到api.conf 脚本需要，key_file 为开机后需要的公钥，钉钉通知 webhook和secret请自行获取（不知道请百度或谷歌找教程）
 ```
