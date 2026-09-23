@@ -39,7 +39,7 @@ chmod 600 /home/1111@11111-2025-08-24T09_14_41.053Z.pem
 pip3 install --break-system-packages oci requests prettytable
 ```
 ```
-nano /home/api.conf
+nano /home/api.conf（以root用户登录的，改地址为/root/api.conf）
 ```
 把以下内容保存到api.conf 脚本需要，key_file 为开机后需要的公钥，钉钉通知 webhook和secret请自行获取（不知道请百度或谷歌找教程）
 ```
